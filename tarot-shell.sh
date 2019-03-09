@@ -20,16 +20,20 @@
 # If you don't have terminal experience, follow the next steps, because you have to make the script excutable.
 # Open your terminal and create a folder in your $HOME directory, call it maybe bin.
 # Go in the bin directory with the command "cd bin".
-# Copy the script from github or wherever you found it, not the html version and paste it in a editor like gedit, mousepad 
-# or leafpad ...... .
-# Close the editor and call the script "tarot-shell.sh".
-# then make the script excutable with " sudo chmod +x tarot-shell.sh"
-# and then your password is required.
+#
+# Download the script from github and put it in the folder bin. 
+# Then make the script excutable with " sudo chmod +x tarot-shell.sh" and then your password is required.
+#
+#
+# 
+# 
+# Then make the script excutable with " sudo chmod +x tarot-shell.sh"
+# And then your password is required.
 #
 # Start the script with ./tarot-shell.sh and the script will create several folders.
-# After it stops add cards to the $HOME/tarot-shell/Decks/ folder.
+# After it stops ad cards to the $HOME/tarot-shell/Decks/ folder.
 #
-# have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
+# Have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
 # expect to much.
 
 # 
