@@ -13,7 +13,9 @@
 # Then copy the shell script in it and open a terminal.
 # Go in the bin directory with the command "cd bin", then make the script excutable with " sudo chmod +x tarot-shell.sh"
 # and then your password is required and the script will create several folders.
-# But remember to add cards to the $HOME/tarot-shell/Decks/ folder. 
+# But remember to add cards to the $HOME/tarot-shell/Decks/ folder.
+#
+# Start the script with ./tarot-shell.sh
 #
 #
 # have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project and I fix 
