@@ -9,15 +9,15 @@
 # It's not possible to have a card that is a 0.
 # Maybe you give the Fool the number 78. But that is not fixed, just avoid the zero.
 
-# If you don't have terminal experience, follow the next steps, becuase you have to make the script excutable.
+# If you don't have terminal experience, follow the next steps, because you have to make the script excutable.
 # Open your terminal and create a folder in your $HOME directory, call it maybe bin.
-# Then copy the shell script in it and open a terminal.
-# Go in the bin directory with the command "cd bin", then make the script excutable with " sudo chmod +x tarot-shell.sh"
-# and then your password is required and the script will create several folders.
-# 
-# Start the script with ./tarot-shell.sh
-#
-# But remember now to add cards to the $HOME/tarot-shell/Decks/ folder.
+# Go in the bin directory with the command "cd bin".
+# Copy the script from github, not the html version and paste it in a editor like gedit, mousepad or leafpad ...... .
+# Close the editor and call the script "tarot-shell.sh".
+# then make the script excutable with " sudo chmod +x tarot-shell.sh"
+# and then your password is required.
+# Start the script with ./tarot-shell.sh  and the script will create several folders.
+# After it stops add cards to the $HOME/tarot-shell/Decks/ folder.
 #
 # have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
 # expect to much. 
