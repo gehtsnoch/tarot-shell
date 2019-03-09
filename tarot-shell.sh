@@ -5,7 +5,7 @@
 # a bash script for drawing tarotcards on a linux machine. It works on the Debian Branch, not
 # sure about others.
 # 9 popular spreads are possible.
-# Immage-magick, toilet, rolldice and feh are required to work.
+# Immage-magick, toilet, rolldice and feh are required to work. No big deal, just get them from the repositorys.
 #
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
