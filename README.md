@@ -20,7 +20,7 @@ No big deal, just get them from the repositorys.
  If you don't have terminal experience, follow the next steps, because you have to make the script excutable.
  Open your terminal and create a folder in your $HOME directory, call it maybe bin.
  Go in the bin directory with the command "cd bin".
- Download the script from github.
+ Download the script from github and put it in the folder bin.
  Then make the script excutable with " sudo chmod +x tarot-shell.sh"
  and then your password is required.
  
