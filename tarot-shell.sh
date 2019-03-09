@@ -1,6 +1,9 @@
 #!/bin/bash
 # Check out the readme File, for some valuable information how the operate this bash script.
-
+# that is just a test upload right now, but the script should nevertheless work. But of course it comes not with cards, this you 
+# have top paste in you home directory folder in /tarot-shell/decks/deck1 ..............
+# have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project and I fix 
+# it only if I feel the need to do so.
 # 
 #     Table of content (somehow)
 #	line 96 check if the backgroundfiles are existing 
