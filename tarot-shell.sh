@@ -1,7 +1,21 @@
 #!/bin/bash
 # Check out the readme File, for some valuable information how the operate this bash script.
-# that is just a test upload right now, but the script should nevertheless work. But of course it comes not with cards, this you 
-# have top paste in you home directory folder in /tarot-shell/decks/deck1 ..............
+# that is just a test upload right now, but the script should nevertheless work. But of course it comes not with cards, 
+# for this you have to paste 78 cards in you home directory folder in /tarot-shell/Deck_1 folder ..............
+#
+# You have to rename your cards in a special way, that means you have to give them numbers, otherwise the script is not working.
+# The numbers have to start with a 1, then 2, and so on, till 77,78. 
+# It's not possible to have a card that is a 0.
+# Maybe you give the Fool the number 78. But that is not fixed, just avoid the zero.
+
+# If you don't have terminal experience, follow the next steps, becuase you have to make the script excutable.
+# Open your terminal and create a folder in your $HOME directory, call it maybe bin.
+# Then copy the shell script in it and open a terminal.
+# Go in the bin directory with the command "cd bin", then make the script excutable with " sudo chmod +x tarot-shell.sh"
+# and then your password is required and the script will create several folders.
+# But remember to add cards to the $HOME/tarot-shell/Decks/ folder. 
+#
+#
 # have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project and I fix 
 # it only if I feel the need to do so.
 # 
