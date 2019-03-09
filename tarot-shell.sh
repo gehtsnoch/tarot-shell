@@ -1,7 +1,7 @@
 #!/bin/bash
-# Check out the readme File, for some valuable information how the operate this bash script.
 # 
-
+# 
+#
 # a bash script for drawing tarotcards on a linux machine. It works on the Debian Branch, not
 # sure about others.
 # 9 popular spreads are possible.
