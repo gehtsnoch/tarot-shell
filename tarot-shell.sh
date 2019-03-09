@@ -9,8 +9,8 @@
 #
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
-# Ad the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
-# You can ad till 28 decks to the program.
+# Add the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
+# You can add till 28 decks to the program.
 #
 # You have to rename your cards in a special way, that means you have to give them numbers, otherwise the script is not working.
 # The numbers have to start with a 1, then 2, and so on, till 77,78.
@@ -31,8 +31,9 @@
 # And then your password is required.
 #
 # Start the script with ./tarot-shell.sh and the script will create several folders.
-# After it stops ad cards to the $HOME/tarot-shell/Decks/ folder.
-#
+# 
+# After it stops, the script asks you for your name, now add your tarotcards to the $HOME/tarot-shell/Decks/ folder.
+# Then proceed with the script.
 # Have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
 # expect to much.
 
