@@ -2,7 +2,11 @@
 # Check out the readme File, for some valuable information how the operate this bash script.
 # 
 
-# a bash script for drawing tarotcards on a linux machine. 9 popular spreads are possible.
+# a bash script for drawing tarotcards on a linux machine. It works on the Debian Branch, not
+# sure about others.
+# 9 popular spreads are possible.
+# Immage-magick, toilet, rolldice and feh are required to work.
+#
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
 # Ad the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
