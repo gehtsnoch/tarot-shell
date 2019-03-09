@@ -5,7 +5,7 @@
 # a bash script for drawing tarotcards on a linux machine. 9 popular spreads are possible.
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
-# Ad the 78 cards in your home directory folder in /tarot-shell/Deck_1 folder ..............
+# Ad the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
 # You can ad till 28 decks to the program.
 #
 # You have to rename your cards in a special way, that means you have to give them numbers, otherwise the script is not working.
