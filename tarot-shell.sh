@@ -1276,7 +1276,7 @@ done
 
 	sleep 8 
 	clear
-	toilet -t -f smmono12.tlf --gay -F border Bon voyage,  psychonaut !!! 
+	toilet -t -f smmono12.tlf --gay -F border Bon voyage,  Taronaut !!! 
 
 	sleep 10
 	clear
