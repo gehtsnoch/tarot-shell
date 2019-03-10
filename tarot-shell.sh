@@ -10,7 +10,8 @@
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
 # Add the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
-# You can add till 28 decks to the program.
+# You can add till 28 decks to the program, but the size of the cards should not exceed much more then 320x560, 
+# otherwise the cards will overlap.
 #
 # You have to rename your cards in a special way, that means you have to give them numbers, otherwise the script is not working.
 # The numbers have to start with a 1, then 2, and so on, till 77,78.
