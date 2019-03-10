@@ -1,4 +1,4 @@
-#  The "tarot-shell.sh" - read tarotcards on the commandline 
+#  The "tarot-shell.sh" - reads tarotcards on the commandline 
 a bash script for drawing tarotcards on a linux machine. 9 popular spreads are possible. 
 It works on the Debian Branch, not sure about others.
  
