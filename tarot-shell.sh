@@ -1252,7 +1252,7 @@ done
 	
 	I publish this script as a open source work.
 	I don't claim any professionality when it comes to coding skills. If you find bugs
-	drop a mail to the the-tarot-guide@gmx, I fix them if I have the time and mood. Thanks!
+	drop a mail to the the-tarot.guide@gmx, I fix them if I have the time and mood. Thanks!
 
 	Disclaimer.
 	This script comes without any waranty whatsoever. You use it on your one risk. 
@@ -1277,25 +1277,10 @@ done
 	
 	
 
-	echo " 
 	
-	
-	
-	Check out my webside for some links for royalty-free downloadable tarot decks and news or further informations.
-	
-	
-	
-	
-	"
-
-	
-
-	toilet -t -f smmono12.tlf --gay -F border www.the-tarot.guide !!! 
 	
 
 
-	sleep 8 
-	clear
 	toilet -t -f smmono12.tlf --gay -F border Bon voyage, Taronaut !!! 
 
 	sleep 10
