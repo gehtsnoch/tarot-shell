@@ -10,7 +10,7 @@
 # -astrologal Reading				-The Celtic Cross Spread	
 # -Relationship Spread
 #
-#
+# And as a secret hack
 #
 #
 #
@@ -312,7 +312,7 @@ else
  	convert -pointsize 40 -font Ubuntu-Bold -fill indigo -annotate +60+2200 " 1     = Significator - shows the situation  \n 2+7 = Conscious plane - what is in the head of everybody \n 6+3 = Heart plane - what everybody feels or desires \n 5+4 = Performance plane - how everybody appears in truth or as a facade " /tmp/tausgang8.JPG /tmp/tausgang9.JPG
 	
 	convert -pointsize 80 -font Ubuntu-bold -fill DarkSlateGrey -box OliveDrab1 -annotate +1330+150 "RELATIONSHIP SPREAD " /tmp/tausgang9.JPG /tmp/start3.JPG 
-	convert -pointsize 50 -font Ubuntu-bold -fill indigo -box azure3 -annotate +2800+200 "Partner" /tmp/start4.JPG $HOME/.tarot-shell/Legesysteme/Hintergrund/relationship-background.JPG
+	convert -pointsize 50 -font Ubuntu-bold -fill indigo -box azure3 -annotate +2800+200 "Partner" /tmp/start3.JPG $HOME/.tarot-shell/Legesysteme/Hintergrund/relationship-background.JPG
 	
 	
 fi	
@@ -685,7 +685,7 @@ Please select:
 1 = One Card Reading				6 = The Sword
 2 = The little Cross	                        7 = The Big Five
 3 = Leap of Faith				8 = Leonardo or Ideal and Reality
-4 = astrological Reading				9 = The Celtic Cross Spread	
+4 = astrological Reading			9 = The Celtic Cross Spread	
 5 = Relationship Spread
 0 = Quit
 99 = back
