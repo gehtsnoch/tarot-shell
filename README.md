@@ -8,6 +8,8 @@ a bash script for drawing tarotcards on a linux machine.
 -astrologal Reading			-The Celtic Cross Spread	
 -Relationship Spread
 
+And as a special hack, if you are at the point the script asks you, what it can do for you, just press 1 and it will fire up a card without more input.
+
 
 
 
