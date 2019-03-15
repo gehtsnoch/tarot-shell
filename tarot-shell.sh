@@ -1,7 +1,5 @@
 #!/bin/bash
-# 
-# 
-#
+# # 
 # a bash script for drawing tarotcards on a linux machine. It works on the Debian Branch, not
 # sure about others.
 # 9 popular spreads are possible.
@@ -16,22 +14,17 @@
 #
 #
 #
-# It works on the Debian Branch, not sure about others.
+# 
 #
 # Immage-magick, toilet, rolldice and feh are required to work. 
 # No big deal,I just get them from the repositorys.
 #
-# You can probably run it on a 64 bit windows too, with the new windows linux subsystem, thats a linux commandline on windows and not a virtual OS. But I don't have experience with that and there are probably better programs around.
+# You can probably run it on a 64 bit windows too, with the new windows linux subsystem, thats a linux 
+# commandline on windows and not a virtual OS. 
+# But I don't have experience with that and there are probably better programs around.
 # Maybe on Mac its possible too.
-
-
-
-
-
-
-
-
-# 
+#
+#
 #
 # You have to add your own deck to the right folder, maybe you find some free decks on the internet.
 #
