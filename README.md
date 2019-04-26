@@ -23,9 +23,13 @@ You can probably run it on a 64 bit windows too, with the new windows linux subs
 Maybe on Mac its possible too.
 
 
+The script comes with a tarot deck that is called the "0815 tarot", it is a very simplistic tarot deck only numbers and names of the card without
+ pictures. 
+
+ You can add your own deck to the right folder, you can find some free decks on the internet.
 
 
- You have to add your own deck to the right folder, maybe you find some free decks on the internet. 
+ You can add your own deck , maybe you find some free decks on the internet. 
  Add the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
  You can add till 28 decks to the program, but the size of the cards should not exceed much more then 320x560, 
  otherwise the cards will overlap.
@@ -43,8 +47,8 @@ Maybe on Mac its possible too.
  and then your password is required.
  
  Start the script with ./tarot-shell.sh  and the script will create several folders.
- After it stops, the script asks you for your name, now add your tarotcards to the $HOME/tarot-shell/Decks/ folder.
- Then proceed with the script.
+ After it stops, the script asks you for your name and you can begin.
+ 
  Have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
  expect to much. 
  
