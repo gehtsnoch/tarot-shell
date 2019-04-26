@@ -19,16 +19,17 @@
 # 
 #
 # Immage-magick, toilet, rolldice and feh are required to work. 
-# No big deal,I just get them from the repositorys.
+# No big deal, just get them from the repositorys.
 #
 # You can probably run it on a 64 bit windows too, with the new windows linux subsystem, thats a linux 
 # commandline on windows and not a virtual OS. 
-# But I don't have experience with that and there are probably better programs around.
+# But I don't have experience with that and there are probably better programs for reading tarot on windows around.
 # Maybe on Mac its possible too.
 #
+#The script comes with a tarot deck that is called the "0815 tarot", it is a very simplistic tarot deck only numbers and names of the card without
+# pictures. 
 #
-#
-# You have to add your own deck to the right folder, maybe you find some free decks on the internet.
+# You can add your own deck to the right folder, you can find some free decks on the internet.
 #
 # Add the 78 cards in your home directory folder in /tarot-shell/Decks/Deck_1 folder ..............
 # You can add till 28 decks to the program, but the size of the cards should not exceed much more then 320x560, 
@@ -37,7 +38,7 @@
 # You have to rename your cards in a special way, that means you have to give them numbers, otherwise the script is not working.
 # The numbers have to start with a 1, then 2, and so on, till 77,78.
 # It's not possible to have a card that is a 0.
-# Maybe you give the Fool the number 78. But that is not fixed, just avoid the zero.
+# Maybe you give the Fool the number 78. But that is not fixed, just avoid the zeros.
 #
 # If you don't have terminal experience, follow the next steps, because you have to make the script excutable.
 # Open your terminal and create a folder in your $HOME directory, call it maybe bin.
@@ -49,13 +50,13 @@
 #
 # 
 # 
-# Then make the script excutable with " sudo chmod +x tarot-shell.sh"
-# And then your password is required.
+# 
+# 
 #
 # Start the script with ./tarot-shell.sh and the script will create several folders.
 # 
-# After it stops, the script asks you for your name, now add your tarotcards to the $HOME/tarot-shell/Decks/ folder.
-# Then proceed with the script.
+# After it stops, the script asks you for your name and the you can already start.
+
 # Have fun and it would be nice if you contact me if its not working, but of course this is just a hobby project so don't
 # expect to much.
 
@@ -476,7 +477,1131 @@ convert -pointsize 50 -font Ubuntu-Bold -fill LavenderBlush4 -annotate +1550+200
 mkdir $HOME/tarot-shell/readings
 mkdir $HOME/tarot-shell/readings/spreadshow
 cp $HOME/.tarot-shell/Legesysteme/Hintergrund/*.JPG $HOME/tarot-shell/readings/spreadshow  
+
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_1" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_1
+fi
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_2" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_2
+fi
+
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_3" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_3
+
+fi
+
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_4" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_4
+
+fi
+
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_5" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_5
+
+fi
+
+
+if [ -d "$HOME/tarot-shell/Decks/Deck_6" ]
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+		
+		else	
+		mkdir $HOME/tarot-shell/Decks/Deck_6
+
+fi
+
+#Russia
+# 
+#0815 Tarotkarten
+# 2019.04.24 habe irgendwie Bock gehabt und die Notwendigkeit gesehen ein Tarotdeck zu meinem Skript hinzu zufügen. Das hier scheint zu gehen und 
+# erschafft einige Karten nur mit Zahl, Element und Rand.
+
+#Start_0815TarotCardDeck#0815TarotCardDeck#0815TarotCardDeck#0815TarotCardDeck#0815TarotCardDeck#0815TarotCardDeck#
+
+#set -x
+#
+if [ -d "$HOME/.tarot-shell/0815_template" ] 
+then
+		echo "hi" | grep "use this hack to hide the oputut :) "
+    else
+	        echo "Directory /path/to/tarot-shell does not exists, but will be created."
+		mkdir -p ~/.tarot-shell/0815_template
+	fi
+
+
+
+
+
+
+
+# Cupstarotcards
+if [ -f "$HOME/.tarot-shell/0815_template/arcana.JPG" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+convert -size 256x448 xc:purple /tmp/ark1.JPG
+
+convert -border 5 -bordercolor black /tmp/ark1.JPG /tmp/ark2.JPG
+convert -border 10 -bordercolor white /tmp/ark2.JPG $HOME/.tarot-shell/0815_template/arcana.JPG
+
+fi
+# The Great Arkana
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/1" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'I' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+-annotate +0+22 '   THE\n  MAGICIAN' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/1
+	
+fi
+# Arcana2
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/2" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'II' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      HIGH-\n PRIESTESS' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/2 
+
+	fi	
+#CUPS 3
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/3" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'III' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n EMPRESS' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/3 
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/4" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
  
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n EMPEROR' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/4 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/5" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'V' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n HIEROPHANT' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/5 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/6" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n LOVERS' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/6 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/7" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n CHARIOT' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/7 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/8" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      STRENGTH' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/8 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/9" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n HERMIT' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end9.JPG
+	cp /tmp/end9.JPG $HOME/tarot-shell/Decks/Deck_1/9 
+
+	fi	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/10" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'X' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE WHEEL\n OF FORTUNE' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/10 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/11" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      JUSTICE' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/32.JPG
+	cp /tmp/32.JPG $HOME/tarot-shell/Decks/Deck_1/11
+
+	fi	
+
+# 
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/12" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE\n HANGED\n MAN' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/33.JPG
+	cp /tmp/33.JPG $HOME/tarot-shell/Decks/Deck_1/12
+
+	fi	
+
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/13" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      DEATH' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/13 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/14" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XIV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      TEMPERANCE' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/14
+
+	fi	
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/15" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XV' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+-annotate +0+22 '      THE DEVIL' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/15
+	
+fi
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/16" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XVI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE TOWER' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/16 
+
+	fi	
+
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/17" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XVII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE STAR' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/17
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/18" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+ 
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XVIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE MOON' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/18 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/19" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XIX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE SUN' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/19 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/20" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      JUDGEMENT' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/20 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/21" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'XXI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE WORLD' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/21 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/78" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 '0' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 30 \
+	-annotate +0+22 '      THE FOOL' $HOME/.tarot-shell/0815_template/arcana.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/78 
+
+	fi	
+
+
+
+#fasdfhlkjblrctvdzdjckgxrflercrvöizjrtceärtozöjkvgcetrhzlkhrefwrtlkzhretkz
+# Staves 
+if [ -f "$HOME/.tarot-shell/0815_template/staves.JPG" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+convert -size 256x448 xc:firebrick1 /tmp/ark1.JPG
+
+convert -border 5 -bordercolor black /tmp/ark1.JPG /tmp/ark2.JPG
+convert -border 10 -bordercolor white /tmp/ark2.JPG $HOME/.tarot-shell/0815_template/staves.JPG
+
+fi
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/22" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'I' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/22 
+	
+fi
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/23" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'II' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/23 
+
+	fi	
+
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/24" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'III' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/24 
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/25" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+ 
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/25 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/26" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'V' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/26 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/27" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/27 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/28" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/28 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/29" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/29 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/30" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end9.JPG
+	cp /tmp/end9.JPG $HOME/tarot-shell/Decks/Deck_1/30 
+
+	fi	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/31" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'X' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/31 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/32" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'PAGE' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end12.JPG
+	cp /tmp/end12.JPG $HOME/tarot-shell/Decks/Deck_1/32 
+
+	fi	
+
+# neue
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/33" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KNIGHT' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end11.JPG
+	cp /tmp/end11.JPG $HOME/tarot-shell/Decks/Deck_1/33 
+
+	fi	
+
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/34" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'QUEEN' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/34 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/35" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KING' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      STAVES' $HOME/.tarot-shell/0815_template/staves.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/35 
+
+	fi	
+
+#fasdfhlkjblrctvdzdjckgxrflercrvöizjrtceärtozöjkvgcetrhzlkhrefwrtlkzhretkz
+# Cupstarotcards
+if [ -f "$HOME/.tarot-shell/0815_template/cups.JPG" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+convert -size 256x448 xc:RoyalBlue1 /tmp/ark1.JPG
+
+convert -border 5 -bordercolor black /tmp/ark1.JPG /tmp/ark2.JPG
+convert -border 10 -bordercolor white /tmp/ark2.JPG $HOME/.tarot-shell/0815_template/cups.JPG
+
+fi
+# Ass of Cups
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/36" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'I' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/36 
+	
+fi
+# Cups2
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/37" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'II' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/37 
+
+	fi	
+#CUPS 3
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/38" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'III' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/38 
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/39" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+ 
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/39 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/40" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'V' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/40 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/41" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/41 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/42" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/42 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/43" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/43 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/44" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end9.JPG
+	cp /tmp/end9.JPG $HOME/tarot-shell/Decks/Deck_1/44 
+
+	fi	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/45" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'X' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/45 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/46" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'PAGE' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/32.JPG
+	cp /tmp/32.JPG $HOME/tarot-shell/Decks/Deck_1/46 
+
+	fi	
+
+# 
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/47" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KNIGHT' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/33.JPG
+	cp /tmp/33.JPG $HOME/tarot-shell/Decks/Deck_1/47
+
+	fi	
+
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/48" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'QUEEN' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/48 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/49" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KING' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      CUPS' $HOME/.tarot-shell/0815_template/cups.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/49 
+
+	fi	
+
+#fasdfhlkjblrctvdzdjckgxrflercrvöizjrtceärtozöjkvgcetrhzlkhrefwrtlkzhretkz
+
+# swordtarotcards
+
+if [ -f "$HOME/.tarot-shell/0815_template/swords.JPG" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+convert -size 256x448 xc:yellow /tmp/ark1.JPG
+
+convert -border 5 -bordercolor black /tmp/ark1.JPG /tmp/ark2.JPG
+convert -border 10 -bordercolor white /tmp/ark2.JPG $HOME/.tarot-shell/0815_template/swords.JPG
+
+fi
+# Ass of Swords 
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/50" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'I' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/50 
+	
+fi
+# Swords 2
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/51" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'II' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/51 
+
+	fi	
+#SWORDS 3
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/52" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'III' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/52
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/53" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+ 
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/53 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/54" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'V' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/54 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/55" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/55 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/56" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/56 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/57" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/57
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/58" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end9.JPG
+	cp /tmp/end9.JPG $HOME/tarot-shell/Decks/Deck_1/58
+
+	fi	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/59" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'X' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/59
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/60" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'PAGE' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/32.JPG
+	cp /tmp/32.JPG $HOME/tarot-shell/Decks/Deck_1/60 
+
+	fi	
+
+# 
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/61" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KNIGHT' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/33.JPG
+	cp /tmp/33.JPG $HOME/tarot-shell/Decks/Deck_1/61
+
+	fi	
+
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/62" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'QUEEN' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/62
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/63" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KING' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      SWORDS' $HOME/.tarot-shell/0815_template/swords.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/63 
+
+	fi	
+
+#fasdfhlkjblrctvdzdjckgxrflercrvöizjrtceärtozöjkvgcetrhzlkhrefwrtlkzhretkz
+# Coinstarotcards
+if [ -f "$HOME/.tarot-shell/0815_template/coins.JPG" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+convert -size 256x448 xc:DarkGoldenRod4 /tmp/ark1.JPG
+
+convert -border 5 -bordercolor black /tmp/ark1.JPG /tmp/ark2.JPG
+convert -border 10 -bordercolor white /tmp/ark2.JPG $HOME/.tarot-shell/0815_template/coins.JPG
+
+fi
+# Ass of Coins
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/64" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+
+convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'I' \
+-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end1.JPG
+cp /tmp/end1.JPG $HOME/tarot-shell/Decks/Deck_1/64
+	
+fi
+
+# Coins 2
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/65" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'II' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end2.JPG
+	cp /tmp/end2.JPG $HOME/tarot-shell/Decks/Deck_1/65 
+
+	fi	
+# COINS 3
+	if [ -f "$HOME/tarot-shell/Decks/Deck_1/66" ] 
+	then
+	echo "hi" | grep "use this hack to hide the oputut :) " 
+	
+	else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'III' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end3.JPG
+	cp /tmp/end3.JPG $HOME/tarot-shell/Decks/Deck_1/66
+fi
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/67" ]
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+ 
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IV' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end4.JPG
+	cp /tmp/end4.JPG $HOME/tarot-shell/Decks/Deck_1/67 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/68" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'V' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end5.JPG
+	cp /tmp/end5.JPG $HOME/tarot-shell/Decks/Deck_1/68 
+
+	fi	
+	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/69" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VI' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end6.JPG
+	cp /tmp/end6.JPG $HOME/tarot-shell/Decks/Deck_1/69 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/70" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end7.JPG
+	cp /tmp/end7.JPG $HOME/tarot-shell/Decks/Deck_1/70
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/71" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'VIII' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end8.JPG
+	cp /tmp/end8.JPG $HOME/tarot-shell/Decks/Deck_1/71 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/72" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'IX' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end9.JPG
+	cp /tmp/end9.JPG $HOME/tarot-shell/Decks/Deck_1/72 
+
+	fi	
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/73" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'X' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/73 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/74" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'PAGE' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/32.JPG
+	cp /tmp/32.JPG $HOME/tarot-shell/Decks/Deck_1/74
+
+	fi	
+
+# 
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/75" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KNIGHT' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/33.JPG
+	cp /tmp/33.JPG $HOME/tarot-shell/Decks/Deck_1/75
+
+	fi	
+
+
+
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/76" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'QUEEN' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/76 
+
+	fi	
+
+if [ -f "$HOME/tarot-shell/Decks/Deck_1/77" ] 
+then
+echo "hi" | grep "use this hack to hide the oputut :) " 
+
+else
+	convert -fill grey -box '#00000000' -font Century-Schoolbook-Bold -gravity North -pointsize 30 -annotate +0+21 'KING' \
+	-fill grey -font Century-Schoolbook-Bold -box black -gravity South -pointsize 40 \
+	-annotate +0+22 '      COINS' $HOME/.tarot-shell/0815_template/coins.JPG /tmp/end10.JPG
+	cp /tmp/end10.JPG $HOME/tarot-shell/Decks/Deck_1/77 
+
+	fi	
+#END0815TarotCardDeck#END0815TarotCardDeck#END0815TarotCardDeck#END0815TarotCardDeck#END0815TarotCardDeck#END0815TarotCardDeck
+
+
+
+
+
+
+
+
+
+#Germany 
 fi
 clear
 toilet -t -f smmono12.tlf --gay -F border - '"TAROT SHELL"' -
@@ -564,8 +1689,8 @@ fi
 	echo "
 Your choice of the tarotdecks!
 
-1. Tarot deck 			2. Tarot deck 			3. Tarot deck
-4. Tarot deck			5. Tarot deck			6. Tarot deck
+1. 0815 Tarot  		  		2. Your Tarot deck 			3. Your Tarot deck
+4. Your Tarot Deck			5. Your Tarot Deck			6. Your Tarot Deck
 "
 
 
@@ -1250,7 +2375,7 @@ done
 	echo "
         This project is a non-commercial personal fun project. I started that because I wanted to do
 	readings for myself on my linux computer.
-	Now the script is some 1200 lines long and maybe more people are interested in it.
+	Now the script is some 2500 lines long and maybe more people are interested in it.
 	
 	I publish this script as a open source work.
 	I don't claim any professionality when it comes to coding skills. If you find bugs
@@ -1277,9 +2402,12 @@ done
 	sleep 10 
 	clear
 	
-	
+	echo " Check out my webside for further information and for a linklist of downloadable tarotdecks."
+	toilet -t -f smmono12.tlf --gay -F border www.the-tarot.guide 
 
-	
+	sleep 10 
+
+	clear
 	
 
 
