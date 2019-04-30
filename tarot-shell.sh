@@ -91,11 +91,11 @@
 
 
 # The following lines are for checking that necessary programms are installed
-command -v convert >/dev/null 2>&1 || { echo >&2 "I require imagemagick but it's not installed.  Aborting."; exit 1; }
-command -v rolldice >/dev/null 2>&1 || { echo >&2 "I require rolldice but it's not installed.  Aborting."; exit 1; }
-command -v feh >/dev/null 2>&1 || { echo >&2 "I require feh but it's not installed.  Aborting."; exit 1; }
+command -v convert >/dev/null 2>&1 || { echo >&2 "I require imagemagick but it's not installed.  Please install it with (sudo apt-get install imagemagick).  Aborting."; exit 1; }
+command -v rolldice >/dev/null 2>&1 || { echo >&2 "I require rolldice but it's not installed.  Please install it with (sudo apt-get install rolldice).  Aborting."; exit 1; }
+command -v feh >/dev/null 2>&1 || { echo >&2 "I require feh but it's not installed.  Please install it with (sudo apt-get install feh).  Aborting."; exit 1; }
 # Ubuntu font
-command -v toilet >/dev/null 2>&1 || { echo >&2 "I require toilet but it's not installed. Please install it with (sudo apt-get install toilet. Aborting."; exit 1; }
+command -v toilet >/dev/null 2>&1 || { echo >&2 "I require toilet but it's not installed. Please install it with (sudo apt-get install toilet). Aborting."; exit 1; }
 
 
 
