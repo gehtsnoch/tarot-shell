@@ -5,7 +5,7 @@ a bash script for drawing tarotcards on a linux machine.
 -One Card Reading				-The Sword 
 -The little Cross	    -The Big Five
 -Leap of Faith				    -Leonardo or Ideal and Reality
--astrologal Reading			-The Celtic Cross Spread	
+-astrological Reading			-The Celtic Cross Spread	
 -Relationship Spread
 
 And as a special hack, if you are at the point where the script asks you, what it can do for you, just press 1 and it will fire up a card without more input.
